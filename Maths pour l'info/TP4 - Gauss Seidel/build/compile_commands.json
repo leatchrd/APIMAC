@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP4 - Gauss Seidel/build",
+  "command": "/usr/bin/clang++  -I/usr/include/eigen3 -O3 -DNDEBUG -Wall -Wextra -Wpedantic -pedantic-errors -o CMakeFiles/eigen_sample.dir/src/TP4_ex1.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP4 - Gauss Seidel/src/TP4_ex1.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP4 - Gauss Seidel/src/TP4_ex1.cpp",
+  "output": "CMakeFiles/eigen_sample.dir/src/TP4_ex1.cpp.o"
+}
+]

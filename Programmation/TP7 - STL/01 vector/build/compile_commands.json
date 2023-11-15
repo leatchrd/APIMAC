@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/Programmation/TP7 - STL/01 vector/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -Wall -Wextra -Wpedantic -pedantic-errors -o CMakeFiles/my_vector.dir/src/ex3.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Programmation/TP7 - STL/01 vector/src/ex3.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/Programmation/TP7 - STL/01 vector/src/ex3.cpp",
+  "output": "CMakeFiles/my_vector.dir/src/ex3.cpp.o"
+}
+]

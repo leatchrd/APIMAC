@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/02 STL/build",
+  "command": "/usr/bin/clang++   -g -Wall -o CMakeFiles/my_stl_exception_test.dir/src/main.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/02 STL/src/main.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/02 STL/src/main.cpp",
+  "output": "CMakeFiles/my_stl_exception_test.dir/src/main.cpp.o"
+}
+]

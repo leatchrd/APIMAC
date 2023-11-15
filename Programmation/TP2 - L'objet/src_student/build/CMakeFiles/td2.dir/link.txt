@@ -1,0 +1,1 @@
+/usr/bin/clang++ -O3 -DNDEBUG CMakeFiles/td2.dir/src/main.cpp.o CMakeFiles/td2.dir/src/VectorD.cpp.o -o td2 

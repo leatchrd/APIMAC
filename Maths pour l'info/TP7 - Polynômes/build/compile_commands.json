@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP6 - Polynômes/build",
+  "command": "/usr/bin/clang++  -I/usr/include/eigen3 -O3 -DNDEBUG -Wall -O2 -o CMakeFiles/poly.dir/src/main.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP6 - Polynômes/src/main.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP6 - Polynômes/src/main.cpp",
+  "output": "CMakeFiles/poly.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP6 - Polynômes/build",
+  "command": "/usr/bin/clang++  -I/usr/include/eigen3 -O3 -DNDEBUG -Wall -O2 -o CMakeFiles/poly.dir/src/Polynomial.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP6 - Polynômes/src/Polynomial.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP6 - Polynômes/src/Polynomial.cpp",
+  "output": "CMakeFiles/poly.dir/src/Polynomial.cpp.o"
+}
+]

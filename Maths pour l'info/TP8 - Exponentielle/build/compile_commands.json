@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP8 - Exponentielle/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -Wall -Wextra -Wpedantic -pedantic-errors -Wno-unknown-warning-option -Wno-unused-private-field -Wno-unused-variable -o CMakeFiles/exponential.dir/src/main.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP8 - Exponentielle/src/main.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP8 - Exponentielle/src/main.cpp",
+  "output": "CMakeFiles/exponential.dir/src/main.cpp.o"
+}
+]

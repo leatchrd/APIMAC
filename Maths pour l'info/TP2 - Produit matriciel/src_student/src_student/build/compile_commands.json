@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2/src_student/src_student/build",
+  "command": "/usr/bin/clang++  -I/usr/include/eigen3 -O3 -DNDEBUG -Wall -Wextra -Wpedantic -pedantic-errors -o CMakeFiles/eigen_sample.dir/src/eigen_sample.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2/src_student/src_student/src/eigen_sample.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2/src_student/src_student/src/eigen_sample.cpp",
+  "output": "CMakeFiles/eigen_sample.dir/src/eigen_sample.cpp.o"
+}
+]

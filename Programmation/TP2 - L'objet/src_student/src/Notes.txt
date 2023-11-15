@@ -1,0 +1,17 @@
+14 septembre 2023
+
+Exercice 1
+1. Les attributs peuvent être un tableau de double (puisque c'est le type de la classe), ainsi que la taille de ce taibleau.
+Pour les méthodes on peut faire tout et n'importe quoi.
+
+Pour un vecteur, il faut comme attributs : la taille et les valeurs.
+
+4. Il faut ajouter #include <vector>
+
+Exercice 2
+2. Le constructeur par défaut n'a pas d'argument.
+
+// #include <iostream> // Si besoin de std::cout
+// unsigned int == size_t
+
+Exercice 3

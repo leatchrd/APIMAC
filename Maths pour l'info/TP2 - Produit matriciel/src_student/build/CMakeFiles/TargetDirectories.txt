@@ -1,0 +1,3 @@
+/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2 - Produit matriciel/src_student/build/CMakeFiles/eigen_sample.dir
+/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2 - Produit matriciel/src_student/build/CMakeFiles/edit_cache.dir
+/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2 - Produit matriciel/src_student/build/CMakeFiles/rebuild_cache.dir

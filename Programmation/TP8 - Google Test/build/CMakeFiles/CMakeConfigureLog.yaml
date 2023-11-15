@@ -1,0 +1,598 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 6.1.0-0.deb11.7-amd64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/3.26.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO"
+      binary: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f05d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f05d.dir/build.make CMakeFiles/cmTC_8f05d.dir/build
+        gmake[1]: Entering directory '/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO'
+        Building C object CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Debian clang version 11.0.1-2
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Candidate multilib: x32;@mx32
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/lib/cuda, version 11.0
+         (in-process)
+         "/usr/lib/llvm-11/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-11/lib/clang/11.0.1 -dependency-file CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-11/lib/clang/11.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO" -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -x c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 11.0.1 based upon LLVM 11.0.1 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/include
+         /usr/lib/llvm-11/lib/clang/11.0.1/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_8f05d
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f05d.dir/link.txt --verbose=1
+        /usr/bin/clang  -v CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -o cmTC_8f05d 
+        Debian clang version 11.0.1-2
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Candidate multilib: x32;@mx32
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/lib/cuda, version 11.0
+         "/usr/bin/ld" --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f05d /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-11/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/include]
+          add: [/usr/lib/llvm-11/lib/clang/11.0.1/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/llvm-11/lib/clang/11.0.1/include] ==> [/usr/lib/llvm-11/lib/clang/11.0.1/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/local/include;/usr/lib/llvm-11/lib/clang/11.0.1/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f05d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f05d.dir/build.make CMakeFiles/cmTC_8f05d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO']
+        ignore line: [Building C object CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Debian clang version 11.0.1-2]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Candidate multilib: x32]
+        ignore line: [@mx32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/lib/cuda  version 11.0]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-11/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-11/lib/clang/11.0.1 -dependency-file CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-11/lib/clang/11.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-JHnLbO" -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -x c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 11.0.1 based upon LLVM 11.0.1 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/llvm-11/lib/clang/11.0.1/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_8f05d]
+        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f05d.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang  -v CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -o cmTC_8f05d ]
+        ignore line: [Debian clang version 11.0.1-2]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Candidate multilib: x32]
+        ignore line: [@mx32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/lib/cuda  version 11.0]
+        link line: [ "/usr/bin/ld" --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f05d /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-11/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8f05d] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/10] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu/../../lib64] ==> dir [/usr/lib/x86_64-linux-gnu/../../lib64]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../..]
+          arg [-L/usr/lib/llvm-11/bin/../lib] ==> dir [/usr/lib/llvm-11/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_8f05d.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o] ==> [/usr/lib/x86_64-linux-gnu/crt1.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/10/crtend.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10] ==> [/usr/lib/gcc/x86_64-linux-gnu/10]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu/../../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../..] ==> [/usr/lib]
+        collapse library dir [/usr/lib/llvm-11/bin/../lib] ==> [/usr/lib/llvm-11/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/crt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o;/usr/lib/gcc/x86_64-linux-gnu/10/crtend.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/lib/llvm-11/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO"
+      binary: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b75cf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b75cf.dir/build.make CMakeFiles/cmTC_b75cf.dir/build
+        gmake[1]: Entering directory '/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO'
+        Building CXX object CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Debian clang version 11.0.1-2
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Candidate multilib: x32;@mx32
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/lib/cuda, version 11.0
+         (in-process)
+         "/usr/lib/llvm-11/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-11/lib/clang/11.0.1 -dependency-file CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-11/lib/clang/11.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO" -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 11.0.1 based upon LLVM 11.0.1 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
+         /usr/local/include
+         /usr/lib/llvm-11/lib/clang/11.0.1/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_b75cf
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b75cf.dir/link.txt --verbose=1
+        /usr/bin/clang++  -v CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b75cf 
+        Debian clang version 11.0.1-2
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Candidate multilib: x32;@mx32
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/lib/cuda, version 11.0
+         "/usr/bin/ld" --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b75cf /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-11/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward]
+          add: [/usr/local/include]
+          add: [/usr/lib/llvm-11/lib/clang/11.0.1/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10] ==> [/usr/include/c++/10]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10] ==> [/usr/include/x86_64-linux-gnu/c++/10]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward] ==> [/usr/include/c++/10/backward]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/llvm-11/lib/clang/11.0.1/include] ==> [/usr/lib/llvm-11/lib/clang/11.0.1/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/10;/usr/include/x86_64-linux-gnu/c++/10;/usr/include/c++/10/backward;/usr/local/include;/usr/lib/llvm-11/lib/clang/11.0.1/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b75cf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b75cf.dir/build.make CMakeFiles/cmTC_b75cf.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Debian clang version 11.0.1-2]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Candidate multilib: x32]
+        ignore line: [@mx32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/lib/cuda  version 11.0]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-11/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-11/lib/clang/11.0.1 -dependency-file CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-11/lib/clang/11.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-vRXidO" -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 11.0.1 based upon LLVM 11.0.1 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/llvm-11/lib/clang/11.0.1/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_b75cf]
+        ignore line: [/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b75cf.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++  -v CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b75cf ]
+        ignore line: [Debian clang version 11.0.1-2]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Candidate multilib: x32]
+        ignore line: [@mx32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/lib/cuda  version 11.0]
+        link line: [ "/usr/bin/ld" --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b75cf /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-11/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b75cf] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/10] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu/../../lib64] ==> dir [/usr/lib/x86_64-linux-gnu/../../lib64]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../..]
+          arg [-L/usr/lib/llvm-11/bin/../lib] ==> dir [/usr/lib/llvm-11/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_b75cf.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o] ==> [/usr/lib/x86_64-linux-gnu/crt1.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/10/crtend.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10] ==> [/usr/lib/gcc/x86_64-linux-gnu/10]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu/../../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/10/../../..] ==> [/usr/lib]
+        collapse library dir [/usr/lib/llvm-11/bin/../lib] ==> [/usr/lib/llvm-11/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/crt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o;/usr/lib/gcc/x86_64-linux-gnu/10/crtend.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/lib/llvm-11/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "googletest/googletest/cmake/internal_utils.cmake:65 (find_package)"
+      - "googletest/googletest/CMakeLists.txt:88 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-G5Tv8P"
+      binary: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-G5Tv8P"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-G5Tv8P
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dbe0c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dbe0c.dir/build.make CMakeFiles/cmTC_dbe0c.dir/build
+        gmake[1] : on entre dans le répertoire « /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-G5Tv8P »
+        Building C object CMakeFiles/cmTC_dbe0c.dir/src.c.o
+        /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_dbe0c.dir/src.c.o -MF CMakeFiles/cmTC_dbe0c.dir/src.c.o.d -o CMakeFiles/cmTC_dbe0c.dir/src.c.o -c "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-G5Tv8P/src.c"
+        Linking C executable cmTC_dbe0c
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbe0c.dir/link.txt --verbose=1
+        /usr/bin/clang CMakeFiles/cmTC_dbe0c.dir/src.c.o -o cmTC_dbe0c 
+        /usr/bin/ld : CMakeFiles/cmTC_dbe0c.dir/src.c.o : dans la fonction « main » :
+        src.c:(.text+0x25) : référence indéfinie vers « pthread_create »
+        /usr/bin/ld : src.c:(.text+0x31) : référence indéfinie vers « pthread_detach »
+        /usr/bin/ld : src.c:(.text+0x3d) : référence indéfinie vers « pthread_cancel »
+        /usr/bin/ld : src.c:(.text+0x4f) : référence indéfinie vers « pthread_join »
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_dbe0c.dir/build.make:100 : cmTC_dbe0c] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-G5Tv8P »
+        gmake: *** [Makefile:127 : cmTC_dbe0c/fast] Erreur 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "googletest/googletest/cmake/internal_utils.cmake:65 (find_package)"
+      - "googletest/googletest/CMakeLists.txt:88 (config_compiler_and_linker)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-ITJAuR"
+      binary: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-ITJAuR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-ITJAuR
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_327b3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_327b3.dir/build.make CMakeFiles/cmTC_327b3.dir/build
+        gmake[1] : on entre dans le répertoire « /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-ITJAuR »
+        Building C object CMakeFiles/cmTC_327b3.dir/CheckFunctionExists.c.o
+        /usr/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create -MD -MT CMakeFiles/cmTC_327b3.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_327b3.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_327b3.dir/CheckFunctionExists.c.o -c "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-ITJAuR/CheckFunctionExists.c"
+        Linking C executable cmTC_327b3
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_327b3.dir/link.txt --verbose=1
+        /usr/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_327b3.dir/CheckFunctionExists.c.o -o cmTC_327b3  -lpthreads 
+        /usr/bin/ld : ne peut trouver -lpthreads
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_327b3.dir/build.make:100 : cmTC_327b3] Erreur 1
+        gmake[1] : on quitte le répertoire « /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-ITJAuR »
+        gmake: *** [Makefile:127 : cmTC_327b3/fast] Erreur 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/usr/local/lib/python3.9/dist-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "googletest/googletest/cmake/internal_utils.cmake:65 (find_package)"
+      - "googletest/googletest/CMakeLists.txt:88 (config_compiler_and_linker)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-jxicfQ"
+      binary: "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-jxicfQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-jxicfQ
+        
+        Run Build Command(s):/usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33fa6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_33fa6.dir/build.make CMakeFiles/cmTC_33fa6.dir/build
+        gmake[1] : on entre dans le répertoire « /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-jxicfQ »
+        Building C object CMakeFiles/cmTC_33fa6.dir/CheckFunctionExists.c.o
+        /usr/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create -MD -MT CMakeFiles/cmTC_33fa6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_33fa6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_33fa6.dir/CheckFunctionExists.c.o -c "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-jxicfQ/CheckFunctionExists.c"
+        Linking C executable cmTC_33fa6
+        /usr/local/lib/python3.9/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33fa6.dir/link.txt --verbose=1
+        /usr/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_33fa6.dir/CheckFunctionExists.c.o -o cmTC_33fa6  -lpthread 
+        gmake[1] : on quitte le répertoire « /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/CMakeFiles/CMakeScratch/TryCompile-jxicfQ »
+        
+      exitCode: 0
+...

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/01 Assertion/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -Wall -DNDEBUG -o CMakeFiles/myAssertTest.dir/src/main.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/01 Assertion/src/main.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/01 Assertion/src/main.cpp",
+  "output": "CMakeFiles/myAssertTest.dir/src/main.cpp.o"
+}
+]

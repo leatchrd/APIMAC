@@ -1,0 +1,1 @@
+/usr/bin/clang++ -O3 -DNDEBUG CMakeFiles/myUnitTests.dir/src/sample_test.cpp.o -o myUnitTests  ../lib/libgtest.a ../INTERFACE/libVectorD.a -lpthread 
