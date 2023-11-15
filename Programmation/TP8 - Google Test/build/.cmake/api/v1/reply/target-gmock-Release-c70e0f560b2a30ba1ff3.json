@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest.a"
+			"path" : "lib/libgmock.a"
 		}
 	],
 	"backtrace" : 3,
@@ -16,12 +16,13 @@
 			"cxx_library",
 			"install",
 			"install_project",
+			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
 		[
 			"googletest/googletest/cmake/internal_utils.cmake",
-			"googletest/googletest/CMakeLists.txt",
+			"googletest/googlemock/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -32,7 +33,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 126,
+				"line" : 97,
 				"parent" : 0
 			},
 			{
@@ -50,7 +51,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 146,
+				"line" : 119,
 				"parent" : 0
 			},
 			{
@@ -60,18 +61,24 @@
 				"parent" : 4
 			},
 			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 98,
+				"parent" : 0
+			},
+			{
 				"file" : 2
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 2,
 				"line" : 9,
-				"parent" : 6
+				"parent" : 7
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 1,
-				"line" : 116,
+				"line" : 75,
 				"parent" : 0
 			}
 		]
@@ -91,16 +98,26 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/myLib/include"
+					"backtrace" : 8,
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/myLib/include"
 				},
 				{
-					"backtrace" : 8,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest/googletest/include"
+					"backtrace" : 9,
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googlemock/include"
 				},
 				{
-					"backtrace" : 8,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest/googletest"
+					"backtrace" : 9,
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googlemock"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googletest/include"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -110,7 +127,14 @@
 			]
 		}
 	],
-	"id" : "gtest::@f95b5c00bd49b3b4698d",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@f95b5c00bd49b3b4698d"
+		}
+	],
+	"id" : "gmock::@d68da25237a7ca2351af",
 	"install" : 
 	{
 		"destinations" : 
@@ -125,12 +149,12 @@
 			"path" : "/usr/local"
 		}
 	},
-	"name" : "gtest",
-	"nameOnDisk" : "libgtest.a",
+	"name" : "gmock",
+	"nameOnDisk" : "libgmock.a",
 	"paths" : 
 	{
-		"build" : "googletest/googletest",
-		"source" : "googletest/googletest"
+		"build" : "googletest/googlemock",
+		"source" : "googletest/googlemock"
 	},
 	"sourceGroups" : 
 	[
@@ -147,7 +171,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "googletest/googletest/src/gtest-all.cc",
+			"path" : "googletest/googlemock/src/gmock-all.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

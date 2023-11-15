@@ -1,4 +1,4 @@
-# Install script for directory: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test
+# Install script for directory: /home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,10 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/INTERFACE/cmake_install.cmake")
-  include("/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/myCode/cmake_install.cmake")
-  include("/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/googletest/cmake_install.cmake")
-  include("/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/myTest/cmake_install.cmake")
+  include("/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/build/INTERFACE/cmake_install.cmake")
+  include("/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/build/myCode/cmake_install.cmake")
+  include("/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/build/googletest/cmake_install.cmake")
+  include("/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/build/myTest/cmake_install.cmake")
 
 endif()
 
@@ -59,5 +59,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

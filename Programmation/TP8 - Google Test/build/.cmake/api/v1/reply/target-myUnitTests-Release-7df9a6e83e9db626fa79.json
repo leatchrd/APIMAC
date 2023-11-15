@@ -91,17 +91,17 @@
 			[
 				{
 					"backtrace" : 9,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/myLib/include"
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/myLib/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest/googletest/include"
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googletest/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest/googletest"
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googletest"
 				}
 			],
 			"language" : "CXX",

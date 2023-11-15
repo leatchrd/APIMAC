@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/myLib/include" -isystem "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest/googletest/include" -isystem "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest/googletest"
+CXX_INCLUDES = -I"/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/myLib/include" -isystem "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googletest/include" -isystem "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googletest"
 
 CXX_FLAGS = -O3 -DNDEBUG
 

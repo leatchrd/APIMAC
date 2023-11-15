@@ -93,6 +93,7 @@ TEST (VectorDArithmetic, minus) {
 	}
 }
 
+TEST (VectorDArithmetic, dot)
 
 /////////////////////////////////////////////////////
 // exception

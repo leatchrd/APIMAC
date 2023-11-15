@@ -1,4 +1,4 @@
-# Install script for directory: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/myCode
+# Install script for directory: /home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/myCode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

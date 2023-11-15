@@ -50,7 +50,7 @@ VectorD VectorD::operator+(const VectorD &v) const
 	VectorD result(size());
 	std::transform(_data.begin(), _data.end(), v._data.begin(), result._data.begin(), std::plus<double>());
 
-	if(result.size() !=0) result[0] += 42; // looks like a bug ...
+	//if(result.size() !=0) result[0] += 42; // looks like a bug ...
 
 	return result;
 }

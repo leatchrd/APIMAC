@@ -1,4 +1,4 @@
-# Install script for directory: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest
+# Install script for directory: /home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/googletest/googlemock/cmake_install.cmake")
+  include("/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/build/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

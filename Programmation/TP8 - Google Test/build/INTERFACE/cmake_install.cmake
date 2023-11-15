@@ -1,4 +1,4 @@
-# Install script for directory: /home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/myLib
+# Install script for directory: /home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/myLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -51,7 +51,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/VectorD" TYPE FILE FILES "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/myLib/include/VectorD.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/VectorD" TYPE FILE FILES "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/myLib/include/VectorD.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,12 +63,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib" TYPE STATIC_LIBRARY FILES "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/INTERFACE/libVectorD.a")
+  file(INSTALL DESTINATION "/usr/local/lib" TYPE STATIC_LIBRARY FILES "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/build/INTERFACE/libVectorD.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/build/INTERFACE/doc/cmake_install.cmake")
+  include("/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/build/INTERFACE/doc/cmake_install.cmake")
 
 endif()
 

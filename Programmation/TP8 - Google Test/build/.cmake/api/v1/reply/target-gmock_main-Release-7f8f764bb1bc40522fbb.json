@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest_main.a"
+			"path" : "lib/libgmock_main.a"
 		}
 	],
 	"backtrace" : 3,
@@ -22,7 +22,7 @@
 		"files" : 
 		[
 			"googletest/googletest/cmake/internal_utils.cmake",
-			"googletest/googletest/CMakeLists.txt",
+			"googletest/googlemock/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -33,7 +33,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 128,
+				"line" : 100,
 				"parent" : 0
 			},
 			{
@@ -51,7 +51,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 146,
+				"line" : 119,
 				"parent" : 0
 			},
 			{
@@ -63,7 +63,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 141,
+				"line" : 101,
 				"parent" : 0
 			},
 			{
@@ -78,7 +78,7 @@
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 116,
+				"line" : 75,
 				"parent" : 0
 			}
 		]
@@ -99,17 +99,27 @@
 			[
 				{
 					"backtrace" : 8,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/myLib/include"
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/myLib/include"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest/googletest/include"
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googlemock/include"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/6ima2/lea.touchard/Bureau/Programmation/TP8 - Google Test/googletest/googletest"
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googlemock"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googletest/include"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP8 - Google Test/googletest/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -123,10 +133,14 @@
 	[
 		{
 			"backtrace" : 6,
+			"id" : "gmock::@d68da25237a7ca2351af"
+		},
+		{
+			"backtrace" : 6,
 			"id" : "gtest::@f95b5c00bd49b3b4698d"
 		}
 	],
-	"id" : "gtest_main::@f95b5c00bd49b3b4698d",
+	"id" : "gmock_main::@d68da25237a7ca2351af",
 	"install" : 
 	{
 		"destinations" : 
@@ -141,12 +155,12 @@
 			"path" : "/usr/local"
 		}
 	},
-	"name" : "gtest_main",
-	"nameOnDisk" : "libgtest_main.a",
+	"name" : "gmock_main",
+	"nameOnDisk" : "libgmock_main.a",
 	"paths" : 
 	{
-		"build" : "googletest/googletest",
-		"source" : "googletest/googletest"
+		"build" : "googletest/googlemock",
+		"source" : "googletest/googlemock"
 	},
 	"sourceGroups" : 
 	[
@@ -163,7 +177,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "googletest/googletest/src/gtest_main.cc",
+			"path" : "googletest/googlemock/src/gmock_main.cc",
 			"sourceGroupIndex" : 0
 		}
 	],
