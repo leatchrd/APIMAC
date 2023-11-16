@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP9 - Avancé/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -Wall -Wextra -Wpedantic -pedantic-errors -Wno-unknown-warning-option -Wno-unused-private-field -Wno-unused-variable -o CMakeFiles/avance.dir/src/main.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP9 - Avancé/src/main.cpp\"",
+  "file": "/home/6ima2/lea.touchard/Bureau/IMAC2/Programmation/TP9 - Avancé/src/main.cpp",
+  "output": "CMakeFiles/avance.dir/src/main.cpp.o"
+}
+]
