@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-bool voyelle (char lettre)
+bool voyelle (const char lettre)
 {
     // char array {'a','e','i','o','u','y','A','E','I','O','U','Y'};
     // int size_array = array.length()-1;
@@ -19,7 +19,7 @@ bool voyelle (char lettre)
     return false;
 }
 
-bool voyelle_bis (char lettre)
+bool voyelle_bis (const char lettre)
 {
     lettre = std::tolower(lettre);
     std::string voyelles = "aeiouy";
@@ -65,7 +65,9 @@ int main ()
             chaine_majuscule[i] = std::toupper(chaine_majuscule[i]);
     }
 
-    std::cout << "La chaine avec les voyelles en majuscule : " << chaine_majuscule << std::endl;    
+    std::cout << "La chaine avec les voyelles en majuscule : " << chaine_majuscule << std::endl; 
+
+return 0   
 }
 
 // faire question 8

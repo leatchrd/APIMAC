@@ -14,7 +14,7 @@ int main ()
         std::cout << "Parfait" << std::endl;
     }
 
-    if (nb > 42)
+    if (nb > 0)
     {
         std::cout << "Strictement positif" << std::endl;
     }
