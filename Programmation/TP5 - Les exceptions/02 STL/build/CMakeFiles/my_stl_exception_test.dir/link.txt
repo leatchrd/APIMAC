@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g CMakeFiles/my_stl_exception_test.dir/src/main.cpp.o -o my_stl_exception_test 

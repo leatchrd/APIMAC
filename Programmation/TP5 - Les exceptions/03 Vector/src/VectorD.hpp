@@ -38,8 +38,6 @@
 /// \brief class defining a vector for linear algebra operations.
 class VectorD {
 
-
-
 private :
   
 	std::vector<double> m_data;	/*!< components of the vector */

@@ -1,1 +1,0 @@
-/usr/bin/clang++ -O3 -DNDEBUG CMakeFiles/my_vector_test.dir/src/main.cpp.o CMakeFiles/my_vector_test.dir/src/VectorD.cpp.o -o my_vector_test 

@@ -1,3 +1,0 @@
-/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/01 Assertion/build/CMakeFiles/myAssertTest.dir
-/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/01 Assertion/build/CMakeFiles/edit_cache.dir
-/home/6ima2/lea.touchard/Bureau/Programmation/TP5 - Les exceptions/01 Assertion/build/CMakeFiles/rebuild_cache.dir
