@@ -1,6 +1,7 @@
 #include <GL/glew.h>
 #include <glimac/SDLWindowManager.hpp>
 #include <iostream>
+#include <strings.h>
 
 using namespace glimac;
 
@@ -22,8 +23,8 @@ int main(int argc, char **argv) {
   GLuint vbo;
   glGenBuffers(1, &vbo);
 
-  GLuint vbos[16];
-  glGenBuffers(16, vbos);
+  // GLuint vbos[16];
+  // glGenBuffers(16, vbos);
 
   // Binding du VBO
   glBindBuffer(GL_ARRAY_BUFFER, vbo);
@@ -43,10 +44,19 @@ int main(int argc, char **argv) {
   glBindVertexArray(vao);
 
   // Activation des attributs de vertex
-  const GLuint VERTEX_ATTR_POSITION = 0;
-  glEnableVertexAttribArray(VERTEX_ATTR_POSITION);
+  const GLuint vertex_attr_position = 0;
+  glEnableVertexAttribArray(vertex_attr_position);
 
+  // Spécification des attributs de vertex
+  glBindBuffer(GL_ARRAY_BUFFER, vbo);
 
+  glVertexAttribPointer(vertex_attr_position, 2, GL_FLOAT, GL_FALSE,
+                        2 * sizeof(GLfloat), 0);
+
+  glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+  // Débinding du VAO
+  glBindVertexArray(0);
 
   // Application loop:
   bool done = false;
@@ -59,13 +69,23 @@ int main(int argc, char **argv) {
       }
     }
 
-    /*********************************
-     * HERE SHOULD COME THE RENDERING CODE
-     *********************************/
+    // Dessin du triangle
+    // Nettoyer la fenêtre
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    // Dessiner en utilisant le VAO
+    glBindVertexArray(vao);
+
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+
+    // Débinding du VAO
+    glBindVertexArray(0);
 
     // Update the display
     windowManager.swapBuffers();
   }
+  glDeleteBuffers(1, &vbo);
+  glDeleteVertexArrays(1, &vao);
 
   return EXIT_SUCCESS;
 }
