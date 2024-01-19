@@ -1,6 +1,19 @@
-cmake_minimum_required(VERSION 2.8)
+# ---Choose CMake version---
+cmake_minimum_required(VERSION 3.20)
 
+# ---Choose project name---
 project(ImacGL)
+
+# ---Add p6 library---
+include(FetchContent)
+set(P6_RAW_OPENGL_MODE ON CACHE BOOL "")
+FetchContent_Declare(
+    p6
+    GIT_REPOSITORY https://github.com/julesfouchy/p6
+    GIT_TAG c962f8c5f3bf8324482facaf2ec178ef4c9aefaa
+)
+FetchContent_MakeAvailable(p6)
+
 
 set(OpenGL_GL_PREFERENCE LEGACY)
 
