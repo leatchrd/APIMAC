@@ -1,3 +1,4 @@
+#include <glm/gtc/constants.hpp>
 #include "glm/glm.hpp"
 #include "p6/p6.h"
 
@@ -24,17 +25,13 @@ int main()
     GLuint vbo;
     glGenBuffers(1, &vbo);
 
-    // GLuint vbos[16];
-    // glGenBuffers(16, vbos);
-
     // Binding du VBO
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
 
     // Nombre de triangles
-    GLuint  N = 1500;
-    GLfloat r = 0.5;
-    // GLfloat theta = 2 * glm::pi<float>() / N; // Ne reconnait pas pi dans glm
-    GLfloat theta = 2 * 3.14159265 / N;
+    GLuint  N     = 1500;
+    GLfloat r     = 0.5;
+    GLfloat theta = 2 * glm::pi<float>() / N;
 
     // Remplir le VBO
     std::vector<Vertex2DColor> vertices;
