@@ -4,11 +4,15 @@
 struct Vertex2DColor {
     glm::vec2 position;
     glm::vec3 color;
+
+    // Constructeur et destructeur
+    // Vertex2DColor();
+    // Vertex2DColor(glm::vec2 pos, glm::vec3 col);
 };
 
 int main()
 {
-    auto ctx = p6::Context{{1280, 720, "TP3 EX4"}};
+    auto ctx = p6::Context{{1280, 720, "TP3 EX5"}};
     ctx.maximize_window();
 
     const p6::Shader shader = p6::load_shader(
@@ -27,21 +31,21 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
 
     // Nombre de triangles
-    GLuint N = 4;
+    GLuint  N = 1500;
+    GLfloat r = 0.5;
+    // GLfloat theta = 2 * glm::pi<float>() / N; // Ne reconnait pas pi dans glm
+    GLfloat theta = 2 * 3.14159265 / N;
 
     // Remplir le VBO
-    Vertex2DColor vertices[] = {
-        Vertex2DColor{{glm::cos(glm::pi<float>() * 0.5), glm::cos(glm::pi<float>() * 0.5)}, {1.f, 0.f, 0.f}},
-        Vertex2DColor{{glm::cos(glm::pi<float>() * 0.5 * 3), glm::cos(glm::pi<float>() * 0.5 * 3)}, {0.f, 1.f, 0.f}},
-        Vertex2DColor{{glm::cos(glm::pi<float>() * 0.5 * 5), glm::cos(glm::pi<float>() * 0.5 * 5)}, {0.f, 0.f, 1.f}},
-        Vertex2DColor{{glm::cos(glm::pi<float>() * 0.5 * 7), glm::cos(glm::pi<float>() * 0.5 * 7)}, {0.f, 0.f, 1.f}}
-    };
+    std::vector<Vertex2DColor> vertices;
+    for (uint i = 0; i < N; i++)
+    {
+        vertices.push_back(Vertex2DColor{{0.f, 0.f}, {0.f, 0.f, 1.f}});
+        vertices.push_back(Vertex2DColor{{r * glm::cos(i * theta), r * glm::sin(i * theta)}, {0.f, 1.f, 0.f}});
+        vertices.push_back(Vertex2DColor{{r * glm::cos((i + 1) * theta), r * glm::sin((i + 1) * theta)}, {0.f, 0.f, 1.f}});
+    }
 
-    // RAPPORT DE LA SITUATION : https://julesfouchy.github.io/Learn--OpenGL/TP3/dessiner-un-disque et faut trouver comment utiliser l'équation paramétrique pour pouvoir donner les positions des points des triangles permettant de construire de cercle. Ici, 4 triangles puisque N=4 (ligne 30)
-    // Puis rendre "dynamique #" : glBufferData(GL_ARRAY_BUFFER, # * sizeof(Vertex2DColor), vertices, GL_STATIC_DRAW); (ligne 44)
-    // Et glDrawArrays(GL_TRIANGLES, 0, #); (ligne 85)
-
-    glBufferData(GL_ARRAY_BUFFER, 4 * sizeof(Vertex2DColor), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, 3 * N * sizeof(Vertex2DColor), vertices.data(), GL_STATIC_DRAW);
 
     // Débinder le VBO
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -82,7 +86,7 @@ int main()
         glBindVertexArray(vao);
 
         shader.use();
-        glDrawArrays(GL_TRIANGLES, 0, 4);
+        glDrawArrays(GL_TRIANGLES, 0, 3 * N);
 
         // Débinding du VAO
         glBindVertexArray(0);
@@ -93,4 +97,4 @@ int main()
 
     glDeleteBuffers(1, &vbo);
     glDeleteVertexArrays(1, &vao);
-}
+};
