@@ -50,11 +50,23 @@ int main()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
 
     // Vecteur contenant les indices des sommets à dessiner
-    std::vector<Vertex2DColor> indices;
-    // ici les indices
-    
+    std::vector<uint32_t> indices;
+    for (uint i = 1; i < N + 1; i++)
+    {
+        indices.push_back(0);
+        indices.push_back(i);
+
+        if (i == N)
+        {
+            indices.push_back(1);
+            break;
+        }
+
+        indices.push_back(i + 1);
+    }
+
     // Remplir le IBO
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, (N + 1) * sizeof(Vertex2DColor), indices.data(), GL_STATIC_DRAW);    
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, 3 * N * sizeof(uint32_t), indices.data(), GL_STATIC_DRAW);
 
     // Debinder le IBO
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
@@ -66,7 +78,9 @@ int main()
     // Binding du VAO
     glBindVertexArray(vao);
 
-    /* A MODOFIER EN CONSEQUENCE
+    // Binding de l'IBO
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
+
     // Activation des attributs de vertex
     static constexpr GLuint aVertexPosition = 3;
     glEnableVertexAttribArray(aVertexPosition);
@@ -77,13 +91,12 @@ int main()
     // Spécification des attributs de vertex
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
 
-    glVertexAttribPointer(aVertexPosition, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (void*)(offsetof(Vertex2DColor, position)));
+    glVertexAttribPointer(aVertexPosition, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex2DColor), (const GLvoid*)offsetof(Vertex2DColor, position));
 
-    glVertexAttribPointer(aVertexColor, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (void*)(offsetof(Vertex2DColor, color)));
+    glVertexAttribPointer(aVertexColor, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex2DColor), (const GLvoid*)offsetof(Vertex2DColor, color));
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-    */
     // Débinding du VAO
     glBindVertexArray(0);
 
@@ -97,7 +110,7 @@ int main()
         glBindVertexArray(vao);
 
         shader.use();
-        glDrawArrays(GL_TRIANGLES, 0, 3 * N);
+        glDrawElements(GL_TRIANGLES, 3 * N, GL_UNSIGNED_INT, 0);
 
         // Débinding du VAO
         glBindVertexArray(0);
@@ -109,10 +122,3 @@ int main()
     glDeleteBuffers(1, &vbo);
     glDeleteVertexArrays(1, &vao);
 };
-
-// Ligne 54
-// Faut lister les points du vecteur
-// Ligne 69
-// Remplir ensuite ça
-
-// Avancement : https://julesfouchy.github.io/Learn--OpenGL/TP3/utiliser-les-buffers-d-index
