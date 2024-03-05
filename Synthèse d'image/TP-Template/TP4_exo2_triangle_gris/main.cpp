@@ -81,5 +81,5 @@ int main()
 }
 
 // Avancement : https://julesfouchy.github.io/Learn--OpenGL/TP4/jouer-avec-les-shaders
-// On est arrivé jusqu'à "Soit P=(x,y)P=(x,y) un point et MM une matrice de transformation 3x3." dans la partie Transformation !
+// On est arrivé jusqu'à "Combiner les transformations"
 // On travaille dans le fichier grey2D.vs.glsl
