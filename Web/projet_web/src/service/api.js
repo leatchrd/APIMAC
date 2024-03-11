@@ -1,2 +1,22 @@
-// déclarer fonction bidule qui contient l'appel de l'api
-// https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/fromagescsv-fromagescsv/records?limit=20&refine=departement%3A%22Nord%22
+const getRatpData = async function() {
+    const response = await fetch("https://api-ratp.pierre-grimaud.fr/v4/")
+    if (response.status == 200) {
+    return await response.json()
+    } else {
+    new Error(response.statusText)
+    }
+    }
+    export { getRatpData }
+
+fetch(
+    "",
+    {
+        method: "POST", // or GET, PUT, DELETE, etc.
+        headers: {
+            "Content-Type": "application/json" // to have JSON content in body
+    'Authorization': 'Bearer ' + myToken, // set JWT token
+        },
+        body: JSON.stringify(myData) // set JSON data in request body
+    }
+)
+
