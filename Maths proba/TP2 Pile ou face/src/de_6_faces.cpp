@@ -14,8 +14,8 @@ int de() {
   return floor(nbRandom);
 }
 
-void lance(const uint nbLance) {
-  std::cout << "Nombre de lances " << nbLance << std::endl;
+void lance(const uint nbLances) {
+  std::cout << "Nombre de lances " << nbLances << std::endl;
 
   uint valeur1 = 0;
   uint valeur2 = 0;
@@ -24,7 +24,7 @@ void lance(const uint nbLance) {
   uint valeur5 = 0;
   uint valeur6 = 0;
 
-  for (uint i = 0; i < nbLance; i++) {
+  for (uint i = 0; i < nbLances; i++) {
     std::cout << de() << " - ";
 
     if (de() == 1)
@@ -45,26 +45,29 @@ void lance(const uint nbLance) {
     if (de() == 6)
       valeur6++;
   }
-  
+
   std::cout << std::endl;
   std::cout << std::endl;
 
-  std::cout << "Apparition de 1 : " << valeur1 * 100 / nbLance << " %"
+  std::cout << "Apparition de 1 : " << valeur1 * 100 / nbLances << " %"
             << std::endl;
-  std::cout << "Apparition de 2 : " << valeur2 * 100 / nbLance << " %"
+  std::cout << "Apparition de 2 : " << valeur2 * 100 / nbLances << " %"
             << std::endl;
-  std::cout << "Apparition de 3 : " << valeur3 * 100 / nbLance << " %"
+  std::cout << "Apparition de 3 : " << valeur3 * 100 / nbLances << " %"
             << std::endl;
-  std::cout << "Apparition de 4 : " << valeur4 * 100 / nbLance << " %"
+  std::cout << "Apparition de 4 : " << valeur4 * 100 / nbLances << " %"
             << std::endl;
-  std::cout << "Apparition de 5 : " << valeur5 * 100 / nbLance << " %"
+  std::cout << "Apparition de 5 : " << valeur5 * 100 / nbLances << " %"
             << std::endl;
-  std::cout << "Apparition de 6 : " << valeur6 * 100 / nbLance << " %"
+  std::cout << "Apparition de 6 : " << valeur6 * 100 / nbLances << " %"
             << std::endl;
 }
 
+float loiExponentielle(const uint lambda) {
+  return -1 / lambda * std::log(1 - rand01());
+}
+
 int main() {
-  lance(15000);
-  std::cout << std::endl;
+  std::cout << loiExponentielle(5) << std::endl;
   return 0;
 }
