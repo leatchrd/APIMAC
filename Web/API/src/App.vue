@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <Background />
+  <div class="background">
     <div class="container">
       <h1>Gravity Falls Characters</h1>
       <CharacterGrid />
@@ -9,21 +8,27 @@
 </template>
 
 <script>
-import Background from '@/components/Background.vue';
 import CharacterGrid from '@/components/CharacterGrid.vue';
 
 export default {
   components: {
-    Background,
     CharacterGrid
   }
 };
 </script>
 
 <style>
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.background {
+  background: #735E59;
+  background: -webkit-linear-gradient(to bottom, #AD795B, #735E59);
+  background: linear-gradient(to bottom, #AD795B, #735E59);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
