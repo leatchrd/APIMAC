@@ -21,17 +21,32 @@ export default {
   },
   methods: {
     async fetchCharacters() {
-      try {
-        const response = await fetch('https://gravity-falls-api.vercel.app/api/characters');
-        const data = await response.json();
-        this.characters = data;
-      } catch (error) {
-        console.error('Error fetching characters:', error);
+  fetch('https://gravity-falls-api.vercel.app/api/characters', {
+    method: 'GET',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
       }
-    }
-  }
+      return response.json();
+    })
+    .then(data => {
+      this.characters = data;
+      this.characters = data.slice(0, 3); // Limité à 3 personnages pour le moment
+    })
+    .catch(error => {
+      console.error('Error fetching characters:', error);
+    });
+}
+}
 };
 </script>
+
+
 
 <style>
 .character-grid {
