@@ -1,3 +1,4 @@
+
 <template>
   <div class="character-card" @click="openCharacterUrl">
     <img :src="getImageUrl()" alt="Character Image" class="character-image" />
