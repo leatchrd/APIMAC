@@ -1,7 +1,7 @@
 <template>
   <div class="character-card">
-    <img :src="character.image" class="character-image" alt="Character Image">
-    <p class="character-name">{{ character.name }}</p>
+    <img :src="character.imageUrl" alt="Character Image" class="character-image" />
+    <p>{{ character.name }}</p>
   </div>
 </template>
 
@@ -18,18 +18,16 @@ export default {
 
 <style>
 .character-card {
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
 }
 
 .character-image {
-  width: 100%;
   border-radius: 10px;
-}
-
-.character-name {
-  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 </style>

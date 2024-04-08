@@ -1,40 +1,38 @@
 <template>
-  <div class="background">
-    <div class="container">
-      <h1>Gravity Falls Characters</h1>
-      <CharacterGrid />
-    </div>
+  <div id="app">
+    <Background :characters="characters" />
   </div>
 </template>
 
 <script>
-import CharacterGrid from '@/components/CharacterGrid.vue';
+import Background from './components/Background.vue';
 
 export default {
   components: {
-    CharacterGrid
+    Background
+  },
+  data() {
+    return {
+      characters: []
+    };
+  },
+  mounted() {
+    fetch('https://api.disneyapi.dev/character')
+      .then(response => response.json())
+      .then(data => {
+        if (Array.isArray(data)) {
+          this.characters = data.slice(0, 20);
+        } else {
+          console.error('Response data is not an array');
+        }
+      })
+      .catch(error => console.error('Error fetching characters', error));
   }
 };
 </script>
 
 <style>
-.background {
-  background: #735E59;
-  background: -webkit-linear-gradient(to bottom, #AD795B, #735E59);
-  background: linear-gradient(to bottom, #AD795B, #735E59);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+#app {
+  text-align: center;
 }
 </style>
