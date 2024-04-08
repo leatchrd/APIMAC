@@ -35,7 +35,6 @@ export default {
       return response.json();
     })
     .then(data => {
-      this.characters = data;
       this.characters = data.slice(0, 3); // Limité à 3 personnages pour le moment
     })
     .catch(error => {
