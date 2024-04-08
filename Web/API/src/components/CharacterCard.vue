@@ -1,7 +1,8 @@
-
 <template>
   <div class="character-card" @click="openCharacterUrl">
-    <img :src="getImageUrl()" alt="Character Image" class="character-image" />
+    <div class="image-container">
+      <img :src="getImageUrl()" alt="Character Image" class="character-image" />
+    </div>
     <p>{{ character.name }}</p>
   </div>
 </template>
@@ -49,10 +50,16 @@ export default {
   transform: scale(1.05);
 }
 
+.image-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
 .character-image {
+  width: 100%;
+  height: 150px;
   border-radius: 10px;
-  width: 200px; 
-  height: 150px; 
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -70,6 +77,12 @@ export default {
   }
   100% {
     transform: translateX(-5px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .character-card {
+    padding: 20px;
   }
 }
 </style>
