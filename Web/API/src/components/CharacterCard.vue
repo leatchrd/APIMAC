@@ -50,7 +50,7 @@ export default {
 
 .character-image {
   border-radius: 10px;
-  width: 150px; 
+  width: 200px; 
   height: 150px; 
   object-fit: cover;
   margin-bottom: 10px;
