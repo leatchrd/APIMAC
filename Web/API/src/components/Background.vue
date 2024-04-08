@@ -23,7 +23,6 @@ export default {
 
 <style>
 .background {
-  background: linear-gradient(to bottom, #83d6c3, #7cacfb);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;

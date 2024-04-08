@@ -1,3 +1,4 @@
+
 <template>
   <div class="character-card" @click="openCharacterUrl">
     <div class="image-container">
