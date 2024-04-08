@@ -1,3 +1,4 @@
+
 <template>
   <div id="app">
     <Background :characters="characters" />
@@ -20,10 +21,10 @@ export default {
     fetch('https://api.disneyapi.dev/character')
       .then(response => response.json())
       .then(data => {
-        if (Array.isArray(data)) {
-          this.characters = data.slice(0, 20);
+        if (data && Array.isArray(data.data)) {
+          this.characters = data.data.slice(0, 20);
         } else {
-          console.error('Response data is not an array');
+          console.error('Invalid response data format');
         }
       })
       .catch(error => console.error('Error fetching characters', error));

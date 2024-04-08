@@ -1,3 +1,4 @@
+
 <template>
   <div class="character-card">
     <img :src="character.imageUrl" alt="Character Image" class="character-image" />
