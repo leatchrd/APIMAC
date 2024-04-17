@@ -2,7 +2,7 @@
 <template>
   <div class="character-card" @click="openCharacterUrl">
     <div class="image-container">
-      <img :src="getImageUrl()" alt="Character Image" class="character-image" />
+      <img :src="getImageUrl() || require('@/assets/unknown.jpg')" alt="Character Image" class="character-image" />
     </div>
     <p>{{ character.name }}</p>
   </div>
@@ -31,7 +31,7 @@ export default {
       }, 500);
     },
     getImageUrl() {
-      return this.character.imageUrl || require("@/assets/unknown.jpg");
+      return this.character.imageUrl;
     },
   },
 };
