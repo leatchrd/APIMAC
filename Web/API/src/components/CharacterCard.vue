@@ -13,42 +13,43 @@ export default {
   props: {
     character: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   methods: {
     openCharacterUrl() {
       if (this.character.sourceUrl) {
-        window.open(this.character.sourceUrl, '_blank');
+        window.open(this.character.sourceUrl, "_blank");
       } else {
         this.characterFrison();
       }
     },
     characterFrison() {
-      this.$el.classList.add('frison-animation');
+      this.$el.classList.add("frison-animation");
       setTimeout(() => {
-        this.$el.classList.remove('frison-animation');
+        this.$el.classList.remove("frison-animation");
       }, 500);
     },
     getImageUrl() {
-      return this.character.imageUrl || require('@/assets/unknown.jpg');
-    }
-  }
+      return this.character.imageUrl || require("@/assets/unknown.jpg");
+    },
+  },
 };
 </script>
 
 <style>
 .character-card {
-  background-color: white;
+  background: white; /* Couleur des cards */
   border-radius: 10px;
   padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .character-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.09);
 }
 
 .image-container {
