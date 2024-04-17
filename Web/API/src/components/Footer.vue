@@ -1,4 +1,4 @@
-// EN COURS, FINAL
+// FINAL
 
 <template>
   <footer>

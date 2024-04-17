@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import SideBar from './Filter.vue';
+import SideBar from './AZFilter.vue';
 
 export default {
   data() {
@@ -27,8 +27,8 @@ export default {
     }
   },
   methods: {
-    handleFilterChange(filteredCharacters) {
-      this.$emit('filter-change', filteredCharacters);
+    handleFilterChange(filteredCharacters) { // SÛRE ?
+      this.$emit('filter-change', filteredCharacters); // SÛRE ?
     }
   }
 };
