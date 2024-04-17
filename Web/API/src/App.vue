@@ -1,3 +1,4 @@
+// EN COURS
 
 <template>
   <div class="app">
@@ -6,7 +7,7 @@
   </div>
 </template>
 <script>
-import Header from "./components/Header.vue";
+import Header from "./components/Header.txt";
 import Background from "./components/Background.vue";
 
 export default {

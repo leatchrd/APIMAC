@@ -1,7 +1,9 @@
-import './assets/main.css'
+// NE PAS TOUCHER
+
+import '@/assets/main.css'
 
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from '@/App.vue'
 
 const myApp = createApp(App)
 myApp.mount('#app')

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import CharacterCard from "./CharacterCard.vue";
+import CharacterCard from "./CharacterCard.txt";
 
 export default {
   props: {
