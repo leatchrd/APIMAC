@@ -1,76 +1,72 @@
-// EN COURS
-
 <template>
-  <div class="app">
-    <Header @search="searchCharacter" />
-    <Background :characters="displayedCharacters" />
-  </div>
+    <Header :rockets="rockets" @filter-change="handleFilterChange" />
+    <Header :characters="characters" @filter-change="handleFilterChange" />
+    <CharacterCard v-for="(character, index) in filteredCharacters" :cardId="index" :imageUrl="rocket.flickr_images[0]"
+        :title="rocket.name" :description="rocket.description" />
+    <Footer />
 </template>
+
+
 <script>
-import Header from "./components/Header.txt";
-import Background from "./components/Background.vue";
+import CharacterCard from './components/CharacterCard.vue';
+import Footer from './components/Footer.vue';
+import Header from "./components/Header.vue";
+import SideBar from './components/AZFilter.vue';
 
 export default {
-  components: {
-    Header,
-    Background,
-  },
-  data() {
-    return {
-      characters: [],
-      displayedCharacters: [],
-    };
-  },
-  methods: {
-    searchCharacter(searchQuery) {
-      // Filtrer les personnages correspondants à la recherche
-      this.displayedCharacters = this.characters.filter((character) => {
-        return character.name.toLowerCase().includes(searchQuery.toLowerCase());
-      });
+    components: {
+        CharacterCard, Footer, Header, SideBar,
     },
-    handleSearchResults(results) {
-      this.displayedCharacters = results;
-    },
-  },
-  mounted() {
-    const storedCharacters = localStorage.getItem("characters");
-    if (storedCharacters) {
-      this.characters = JSON.parse(storedCharacters);
-      this.displayedCharacters = this.characters.slice(5, 20);
-      // this.displayedCharacters = this.characters.filter(character => character.name == "Achilles"); // On obtient le résultat Achilles
-    } else {
-      this.fetchCharacters();
-    }
-  },
-  methods: {
-    shuffle(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
+    data() {
+        return {
+            characters: [],
+            filteredCharacters: [],
+        };
     },
     mounted() {
-      fetch("http://api.disneyapi.dev/character?page=2&pageSize=100")
-        .then((response) => response.json())
-        .then((data) => {
-          if (data && Array.isArray(data.data)) {
-            this.characters = data.data.slice(0, 20);
-          } else {
-            console.error("Invalid response data format");
-          }
-        })
-        .catch((error) => console.error("Error fetching characters", error));
+        this.getCharacterData();
     },
-  },
+    methods: {
+        async getCharacterData() {
+            const response = await fetch("https://api.disneyapi.dev/character?page=2&pageSize=50")
+            try {
+                const data = await response.json();
+                this.characters = data;
+                // this.filteredCharacters = data;
+            } catch (error) {
+                console.error('Error fetching rocket data:', error);
+            }
+        },
+
+        // async getCharacterData() {
+        //     const response = await fetch("https://api.disneyapi.dev/character?page=2&pageSize=50")
+        //     if (response.status == 200) {
+        //         const data = await response.json()
+        //         return data.characters
+        //     } else {
+        //         console.error('Error fetching character data:', error);
+        //     }
+        // },
+
+        handleFilterChange(filteredCharacters) {
+            // Update filteredCharacters when filters change
+            this.filteredCharacters = filteredCharacters;
+            console.log(this.filteredCharacters);
+        },
+
+    },
 };
 </script>
 
 <style>
-.app {
-  text-align: center;
-  background: linear-gradient(to bottom, #83d6c3, #7cacfb);
-  min-height: 100vh;
+body {
+    background: linear-gradient(to bottom, #83d6c3, #7cacfb);
+    font-family: 'Arial', sans-serif;
+    /* SÛRE ? */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 200px;
+    padding-bottom: 50px;
 }
 </style>
-

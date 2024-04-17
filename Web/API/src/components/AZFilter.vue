@@ -36,10 +36,10 @@
       margin: 10px;
       margin-bottom: 20px;
   }
-  @media (min-width: 290px) and (max-width: 819px) {
+  @media (min-width: 300px) and (max-width: 800px) {
       .az-filter {
           position: absolute;
-          padding-top: 60px;
+          padding-top: 50px;
       }
   }
 </style>

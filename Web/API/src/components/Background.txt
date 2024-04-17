@@ -3,9 +3,7 @@
 <template>
   <div class="grid">
     <CharacterCard
-      v-for="(character, index) in characters"
-      :key="character._id || index"
-      :character="character"
+      v-for="(character, index) in characters":key="character._id || index":character="character"
     />
   </div>
 </template>
