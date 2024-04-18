@@ -15,7 +15,8 @@ export default {
   props: {
     imageUrl: {
       type: String,
-      required: true,
+      default : './assets/unknown.jpg',
+    //  required: true,
     },
     name: {
       type: String,

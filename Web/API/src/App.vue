@@ -5,10 +5,10 @@
     :key="character._id || index"
     :character="character"
   />
-  <Footer />
+
 </template>
 
-
+//   <Footer />
 <script>
 import getCharactersData from "./service/CharactersRepository.js";
 import CharacterCard from "./components/CharacterCard.vue";
@@ -31,24 +31,31 @@ export default {
       charactersData: [],
       characters: [],
       filteredCharacters: [],
-    };
+    }
   },
+
   mounted() {
     this.getCharacterData();
   },
+
   methods: {
     async getCharacterData() {
-      const response = await fetch(
-        "https://api.disneyapi.dev/character?page=2&pageSize=50"
-      );
-      try {
-        const data = await response.json();
-        this.characters = data;
-        // this.filteredCharacters = data;
-      } catch (error) {
-        console.error("Error fetching rocket data:", error);
-      }
-    },
+      this.getCharacterData = await getCharactersData()
+    }
+  }
+  // methods: {
+    //async getCharacterData() {
+    //  const response = await fetch(
+    //    "https://api.disneyapi.dev/character?page=2&pageSize=50"
+    //  );
+    //  try {
+    //    const data = await response.json();
+    //    this.characters = data;
+    //    // this.filteredCharacters = data;
+    //  } catch (error) {
+    //    console.error("Error fetching rocket data:", error);
+    //  }
+    //},
 
     // async getCharacterData() {
     //     const response = await fetch("https://api.disneyapi.dev/character?page=2&pageSize=50")
@@ -60,12 +67,12 @@ export default {
     //     }
     // },
 
-    handleFilterChange(filteredCharacters) {
-      // Update filteredCharacters when filters change
-      this.filteredCharacters = filteredCharacters;
-      console.log(this.filteredCharacters);
-    },
-  },
+    //handleFilterChange(filteredCharacters) {
+    //  // Update filteredCharacters when filters change
+    //  this.filteredCharacters = filteredCharacters;
+    //  console.log(this.filteredCharacters);
+    //},
+  //},
 };
 </script>
 
