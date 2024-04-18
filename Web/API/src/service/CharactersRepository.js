@@ -1,5 +1,5 @@
-const getCharacterData = async function() {
-    const response = await fetch("http://api.disneyapi.dev/character")
+const getCharactersData = async function() {
+    const response = await fetch("https://api.disneyapi.dev/character?page=2&pageSize=50")
     if (response.status == 200) {
         const data = await response.json()
         console.log(data.characters) // DELETE
@@ -9,4 +9,4 @@ const getCharacterData = async function() {
     }
 }
 
-export default { getCharacterData }
+export default { getCharactersData }
