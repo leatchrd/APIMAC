@@ -1,1 +1,0 @@
-/usr/bin/clang++ -O3 -DNDEBUG CMakeFiles/random.dir/src/Rand.cpp.o -o random 
