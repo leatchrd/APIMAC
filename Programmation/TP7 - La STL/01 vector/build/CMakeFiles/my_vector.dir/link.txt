@@ -1,1 +1,0 @@
-/usr/bin/clang++ -O3 -DNDEBUG CMakeFiles/my_vector.dir/src/ex3.cpp.o -o my_vector 

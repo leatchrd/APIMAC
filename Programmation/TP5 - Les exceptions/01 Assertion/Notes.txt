@@ -1,7 +1,0 @@
-13 octobre 2023
-
-Question 2 : Les asserts sont des petites erreurs au codage
-Alors que les exceptions permettent de gérer les "erreurs" d'inattention de la part de l'utilisateur
-
-Question 3 : Les asserts ralentissent le code car elles se lancent au runtime alors que les statics_asserts se lancent à la complilation.
-
