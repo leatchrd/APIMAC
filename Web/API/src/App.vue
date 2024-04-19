@@ -1,11 +1,11 @@
 <template>
   <Header :characters="characters" @filter-change="handleFilterChange" />
-  <CharacterCard
-    v-for="(character, index) in characters"
-    :key="character._id || index"
-    :character="character"
-  />
-  <Footer />
+    <CharacterCard
+      v-for="(character, index) in characters"
+      :key="character._id || index"
+      :character="character"
+    />
+  <Footer></Footer>
 </template>
 
 <script>
