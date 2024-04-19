@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/6ima2/lea.touchard/Bureau/IMAC2/Maths pour l'info/TP9 - Aléatoire/build",
-  "command": "/usr/bin/clang++   -g -Wall -Wextra -Wpedantic -pedantic-errors -Wno-unknown-warning-option -Wno-unused-private-field -Wno-unused-variable -o CMakeFiles/random.dir/src/sdl_random.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/IMAC2/Maths pour l'info/TP9 - Aléatoire/src/sdl_random.cpp\"",
-  "file": "/home/6ima2/lea.touchard/Bureau/IMAC2/Maths pour l'info/TP9 - Aléatoire/src/sdl_random.cpp",
-  "output": "CMakeFiles/random.dir/src/sdl_random.cpp.o"
-}
-]

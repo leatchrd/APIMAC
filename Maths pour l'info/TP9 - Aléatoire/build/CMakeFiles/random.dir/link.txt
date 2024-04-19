@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g CMakeFiles/random.dir/src/sdl_random.cpp.o -o random 
