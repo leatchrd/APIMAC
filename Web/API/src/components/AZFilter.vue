@@ -1,8 +1,8 @@
-// EN COURS, FINAL
+// WORK IN PROGRESS
 
 <template>
   <div class="az-filter">
-    <label for="character-sort">Sort by:</label>
+    <label for="character-sort">Sort by :</label>
     <select :value="NameSort" @input="AZSort" id="character-sort">
       <option name="AZName" value="AZName">Name A - Z</option>
       <option name="ZAName" value="ZAName">Name Z - A</option>

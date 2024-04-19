@@ -1,4 +1,4 @@
-// TO DELETE
+// DON'T WORK HERE
 
 <template>
   <div class="grid">
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import CharacterCard from "./CharacterCard.txt";
+import CharacterCard from "./CharacterCard.vue";
 
 export default {
   props: {
@@ -26,14 +26,13 @@ export default {
 
 <style>
 .grid {
-  /* Faire une grille de cartes */
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; /* Espace entre deux cards */
+  grid-gap: 20px;
   /* grid-row: auto; */
-  padding: 50px; /* Espace autour des cards */
+  padding: 50px;
   padding-block-start: 20px;
-  min-height: 50px; /* Hauteur des cards */
+  min-height: 50px;
 }
 </style>

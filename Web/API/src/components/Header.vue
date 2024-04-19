@@ -1,5 +1,4 @@
-// EN COURS, FINAL
-// note : SideBar, characters
+// WORK IN PROGRESS
 
 <template>
   <header>
@@ -22,12 +21,12 @@ export default {
   },
   props: {
     characters: {
-      type: Array, // SÛRE ?
+      type: Array,
     }
   },
   methods: {
-    handleFilterChange(filteredCharacters) { // SÛRE ?
-      this.$emit('filter-change', filteredCharacters); // SÛRE ?
+    handleFilterChange(filteredCharacters) {
+      this.$emit('filter-change', filteredCharacters);
     }
   }
 };
@@ -40,9 +39,6 @@ header {
   padding: 10px;
   text-align: center;
   width: 100%;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; */
+  /* position: fixed; */
 }
 </style>

@@ -1,4 +1,4 @@
-// FINAL
+// DONE
 
 <template>
   <footer class="Footer">
@@ -9,9 +9,9 @@
 <style scoped>
   footer {
     display: flexbox;
-    height: 100px;
+    height: 60px;
     background-color: white;
-    padding-top: 40px;
+    padding: 20px;
     justify-content: space-around;
     text-align: center;
   }

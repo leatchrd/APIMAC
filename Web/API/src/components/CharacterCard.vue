@@ -1,8 +1,8 @@
-// EN COURS, FINAL
-// PAS SÛRE DU getImageUrl()
+// WORK IN PROGRESS
+
 <template>
   <div class="character-card" @click="openCharacterUrl">
-    <img :src="getImageUrl()" alt="Character Image" class="character-image" />
+    <img class="character-image" :src="getImageUrl()" alt="Character Image" />
     <div class="card-content">
       <h3 class="character-name">{{ name }}</h3>
       <p class="character-film">{{ films }}</p>
@@ -15,8 +15,7 @@ export default {
   props: {
     imageUrl: {
       type: String,
-      default : './assets/unknown.jpg',
-    //  required: true,
+      default: "./assets/unknown.jpg",
     },
     name: {
       type: String,
@@ -55,21 +54,14 @@ export default {
 
 <style scoped>
 .character-card {
-  /*TO REWORK */
   background: white;
-  /* Couleur des cards */
   width: 200px;
-  /* SÛRE ? */
   border-radius: 10px;
   overflow: hidden;
-  /* SÛRE ? */
   margin: 16px;
-  /* SÛRE ? */
   cursor: pointer;
   transition: transform 0.3s ease;
-
   padding: 10px;
-  /* L SÛRE ? */
 }
 
 .character-card:hover {
@@ -80,31 +72,24 @@ export default {
   width: 100%;
   height: 150px;
   border-radius: 10px;
-  /* L SÛRE ? */
   object-fit: cover;
   margin-bottom: 10px;
-  /* L SÛRE ? */
 }
 
 .card-content {
   padding: 20px;
-  /* SÛRE ? */
 }
 
 .character-name {
   font-size: 1.5em;
-  /* SÛRE ? */
   margin-bottom: 10px;
-  /* SÛRE ? */
 }
 
 .character-film {
-  color: #555;
-  /* SÛRE ? */
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-/* ------ L SÛRE ? ------ */
 .frison-animation {
   animation: frison 0.5s ease;
 }

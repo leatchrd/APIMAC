@@ -1,3 +1,5 @@
+// UNUSED FILE
+
 <template>
   <div class="header">
     <input
@@ -6,7 +8,7 @@
       @keyup.enter="search"
       placeholder="Rechercher un personnage Disney"
     />
-    <button @click="search"><i class="fas fa-search"></i></button>
+    <button @click="search"><i class="button"></i></button>
   </div>
 </template>
   
