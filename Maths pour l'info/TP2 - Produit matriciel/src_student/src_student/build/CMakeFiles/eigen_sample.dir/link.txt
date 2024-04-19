@@ -1,1 +1,0 @@
-/usr/bin/clang++ -O3 -DNDEBUG CMakeFiles/eigen_sample.dir/src/eigen_sample.cpp.o -o eigen_sample 

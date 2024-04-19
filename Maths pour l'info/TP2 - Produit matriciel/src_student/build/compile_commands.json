@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2 - Produit matriciel/src_student/build",
-  "command": "/usr/bin/clang++  -I/usr/include/eigen3 -O3 -DNDEBUG -Wall -Wextra -Wpedantic -pedantic-errors -o CMakeFiles/eigen_sample.dir/src/TP2_ex2.cpp.o -c \"/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2 - Produit matriciel/src_student/src_student/src/TP2_ex2.cpp\"",
-  "file": "/home/6ima2/lea.touchard/Bureau/Maths pour l'info/TP2 - Produit matriciel/src_student/src_student/src/TP2_ex2.cpp",
-  "output": "CMakeFiles/eigen_sample.dir/src/TP2_ex2.cpp.o"
-}
-]

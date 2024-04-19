@@ -1,3 +1,0 @@
-/home/6ima2/lea.touchard/Bureau/IMAC2/Maths pour l'info/TP9 - Aléatoire/build/CMakeFiles/random.dir
-/home/6ima2/lea.touchard/Bureau/IMAC2/Maths pour l'info/TP9 - Aléatoire/build/CMakeFiles/edit_cache.dir
-/home/6ima2/lea.touchard/Bureau/IMAC2/Maths pour l'info/TP9 - Aléatoire/build/CMakeFiles/rebuild_cache.dir
