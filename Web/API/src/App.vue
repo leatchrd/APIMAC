@@ -5,10 +5,9 @@
     :key="character._id || index"
     :character="character"
   />
-
+  <Footer />
 </template>
 
-//   <Footer />
 <script>
 import getCharactersData from "./service/CharactersRepository.js";
 import CharacterCard from "./components/CharacterCard.vue";
@@ -19,19 +18,19 @@ import SideBar from "./components/AZFilter.vue";
 export default {
   name: "CharactersGallery",
 
-  //components: {
-  //  CharacterCard,
-  //  Footer,
-  //  Header,
-  // SideBar,
-  //},
+  components: {
+    CharacterCard,
+    Footer,
+    Header,
+    SideBar,
+  },
 
   data() {
     return {
       charactersData: [],
       characters: [],
       filteredCharacters: [],
-    }
+    };
   },
 
   mounted() {
@@ -40,38 +39,38 @@ export default {
 
   methods: {
     async getCharacterData() {
-      this.getCharacterData = await getCharactersData()
-    }
-  }
+      this.getCharacterData = await getCharactersData();
+    },
+  },
   // methods: {
-    //async getCharacterData() {
-    //  const response = await fetch(
-    //    "https://api.disneyapi.dev/character?page=2&pageSize=50"
-    //  );
-    //  try {
-    //    const data = await response.json();
-    //    this.characters = data;
-    //    // this.filteredCharacters = data;
-    //  } catch (error) {
-    //    console.error("Error fetching rocket data:", error);
-    //  }
-    //},
+  //async getCharacterData() {
+  //  const response = await fetch(
+  //    "https://api.disneyapi.dev/character?page=2&pageSize=50"
+  //  );
+  //  try {
+  //    const data = await response.json();
+  //    this.characters = data;
+  //    // this.filteredCharacters = data;
+  //  } catch (error) {
+  //    console.error("Error fetching rocket data:", error);
+  //  }
+  //},
 
-    // async getCharacterData() {
-    //     const response = await fetch("https://api.disneyapi.dev/character?page=2&pageSize=50")
-    //     if (response.status == 200) {
-    //         const data = await response.json()
-    //         return data.characters
-    //     } else {
-    //         console.error('Error fetching character data:', error);
-    //     }
-    // },
+  // async getCharacterData() {
+  //     const response = await fetch("https://api.disneyapi.dev/character?page=2&pageSize=50")
+  //     if (response.status == 200) {
+  //         const data = await response.json()
+  //         return data.characters
+  //     } else {
+  //         console.error('Error fetching character data:', error);
+  //     }
+  // },
 
-    //handleFilterChange(filteredCharacters) {
-    //  // Update filteredCharacters when filters change
-    //  this.filteredCharacters = filteredCharacters;
-    //  console.log(this.filteredCharacters);
-    //},
+  //handleFilterChange(filteredCharacters) {
+  //  // Update filteredCharacters when filters change
+  //  this.filteredCharacters = filteredCharacters;
+  //  console.log(this.filteredCharacters);
+  //},
   //},
 };
 </script>

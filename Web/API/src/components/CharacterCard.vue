@@ -23,11 +23,11 @@ export default {
       required: true,
     },
     films: {
-      type: String,
+      type: Array,
       required: true,
     },
     _id: {
-      type: Number,
+      type: String,
       required: true,
     },
   },

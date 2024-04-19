@@ -1,4 +1,4 @@
-// NE PAS TOUCHER
+// DO NOT MODIFIED
 
 import '@/assets/main.css'
 

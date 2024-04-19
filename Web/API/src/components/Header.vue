@@ -4,12 +4,12 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <SideBar :characters="characters" @filter-change="handleFilterChange" />
+    <Filter :characters="characters" @filter-change="handleFilterChange" />
   </header>
 </template>
 
 <script>
-import SideBar from './AZFilter.vue';
+import Filter from './AZFilter.vue';
 
 export default {
   data() {
@@ -18,12 +18,11 @@ export default {
     };
   },
   components: {
-    SideBar,
+    Filter,
   },
   props: {
     characters: {
       type: Array, // SÛRE ?
-      required: true
     }
   },
   methods: {

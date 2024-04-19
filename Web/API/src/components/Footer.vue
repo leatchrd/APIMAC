@@ -1,7 +1,7 @@
 // FINAL
 
 <template>
-  <footer>
+  <footer class="Footer">
       <p>By Léa TOUCHARD - IMAC2 2024</p>
   </footer>
 </template>
